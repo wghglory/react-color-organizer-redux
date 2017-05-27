@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 // bootstrap core. specific plugin like jumbotron is imported in needed component.
 // import './bootstrap/_core.scss';
 
-/* Explicitly Passing the Store */
 import App from './components/App';
 import storeFactory from './redux/store.color';
 

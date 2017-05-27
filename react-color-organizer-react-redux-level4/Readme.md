@@ -30,20 +30,22 @@ The provider adds the store to the context and updates the App component when ac
 
 ```jsx
 // index.js
-import React from 'react'
-import { render } from 'react-dom'
-import { Provider } from 'react-redux'
-import App from './components/App'
-import storeFactory from './store'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const store = storeFactory()
+/* react-redux library Provider, Connect */
+import App from './components/App';
+import storeFactory from './store/storeFactory';
+import { Provider } from 'react-redux';
 
-render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-    document.getElementById('app')
-)
+const store = storeFactory();
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('app')
+);
 ```
 
 The provider requires that we pass the store as a property. It **adds the store to the context** so that it can be retrieved by any child of the App component. Simply using the provider can save us some time and simplify our code.
@@ -91,16 +93,14 @@ The second function, mapDispatchToProps, injects the store’s dispatch function
 All of our containers can be created using the React Redux connect function in a single file:
 
 ```javascript
+// Containers.js
+import AddColorForm from './ui/AddColorForm';
+import SortMenu from './ui/SortMenu';
+import ColorList from './ui/ColorList';
+import { addColor, sortColors, rateColor, removeColor } from '../actions/actions.color';
+import { sortFunction } from '../utils/arrayHelper';
 
-import { connect } from 'react-redux'
-import AddColorForm from './ui/AddColorForm'
-import SortMenu from './ui/SortMenu'
-import ColorList from './ui/ColorList'
-import { addColor, 
-         sortColors, 
-         rateColor, 
-         removeColor } from '../actions'
-import { sortFunction } from '../lib/array-helpers'
+import { connect } from 'react-redux';
 
 export const NewColor = connect(
     null,
