@@ -27,6 +27,15 @@ The Color Organizer allows users to add, name, rate, and remove colors from thei
 }
 ```
 
+## ways to connect Redux to React
+
+* level 1: We explicitly passed the store down the component tree to children as a property. 
+* level 2: We implicitly passed the store directly to the components that need to use it via context. 
+* level 3: We decoupled the store’s functionality from our presentation through the use of container components. 
+* level 4: we used react-redux to help us rapidly connect the store to presentation using context and container components.
+
+---
+
 #### Installation
 Run this npm command to install dependencies.
 ```

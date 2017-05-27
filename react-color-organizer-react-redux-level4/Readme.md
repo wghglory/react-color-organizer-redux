@@ -143,10 +143,3 @@ export const Colors = connect(
 ```
 
 In this example, each of our containers are defined using React Redux’s connect function. The connect function connects Redux to purely presentational components. The first argument is a function that maps state variables to properties. The second argument is a function that dispatches actions when events are raised. If you only want to map callback function properties to dispatch you can provide null as a placeholder for the first argument, as we have in the definition of the NewColor container.
-
-we looked at various ways to connect Redux to React. 
-
-* level 1: We explicitly passed the store down the component tree to children as a property. 
-* level 2: We implicitly passed the store directly to the components that need to use it via context. 
-* level 3: We decoupled the store’s functionality from our presentation through the use of container components. 
-* level 4: we used react-redux to help us rapidly connect the store to presentation using context and container components.
