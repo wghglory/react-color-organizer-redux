@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 
 /* Explicitly Passing the Store */
 import App from './components/App';
-import storeFactory from './redux/store.color';
+import storeFactory from './store/storeFactory';
 import { Provider } from 'react-redux';
 
 

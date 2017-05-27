@@ -1,6 +1,5 @@
 /* react redux provider */
 import React from 'react';
-// import PropTypes from 'prop-types';
 import '../scss/App.scss';
 import { Menu, NewColor, Colors } from './Containers';
 

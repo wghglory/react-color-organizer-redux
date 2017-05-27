@@ -1,4 +1,4 @@
-import C from './constants.color';
+import C from '../constants/constants.color';
 
 import { v4 } from 'uuid';
 

@@ -2,7 +2,7 @@
 import AddColorForm from './ui/AddColorForm';
 import SortMenu from './ui/SortMenu';
 import ColorList from './ui/ColorList';
-import { addColor, sortColors, rateColor, removeColor } from '../redux/actions.color';
+import { addColor, sortColors, rateColor, removeColor } from '../actions/actions.color';
 import { sortFunction } from '../utils/arrayHelper';
 
 import { connect } from 'react-redux';

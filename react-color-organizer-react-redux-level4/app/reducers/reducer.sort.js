@@ -1,4 +1,4 @@
-import C from './constants.color';
+import C from '../constants/constants.color';
 
 export const sortReducer = (state = "SORTED_BY_DATE", action) => {
   switch (action.type) {
