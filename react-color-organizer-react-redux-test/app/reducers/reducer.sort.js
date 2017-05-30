@@ -1,9 +1,6 @@
 import C from '../constants/constants.color';
 
-export const sortReducer = (state = "SORTED_BY_DATE", action) => {
-  if (action === undefined || action.sortBy === undefined) {
-    return state;
-  }
+export const sortReducer = (state = "SORTED_BY_DATE", action = { type: null }) => {
   switch (action.type) {
     case C.SORT_COLORS:
       return action.sortBy;
@@ -11,4 +8,3 @@ export const sortReducer = (state = "SORTED_BY_DATE", action) => {
       return state;
   }
 };
-

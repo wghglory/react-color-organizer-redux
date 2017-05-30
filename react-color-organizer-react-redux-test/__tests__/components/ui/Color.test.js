@@ -14,14 +14,14 @@ describe("<Color /> UI Component", () => {
     )
 
     it("Invokes onRate property", () => {
-        mount(<Color title="Test Color" color="#F0F0F0" />)
+        mount(<Color title="Test Color" color="#F0F0F0" timestamp="Mon Apr 11 2016 12:54:19 GMT-0700 (PDT)" />)
             .find("div.star-rating")
             .childAt(2)
             .simulate('click')
     })
 
     it("Invokes onRate property", () => {
-        mount(<Color title="Test Color" color="#F0F0F0" />)
+        mount(<Color title="Test Color" color="#F0F0F0" timestamp="Mon Apr 11 2016 12:54:19 GMT-0700 (PDT)" />)
             .find("button")
             .simulate('click')
     })

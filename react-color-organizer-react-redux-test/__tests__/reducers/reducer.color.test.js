@@ -53,7 +53,5 @@ describe("color Reducer", () => {
   });
 
   it("Defaults array for incorrect action", () =>
-    expect(colorReducer()).toEqual({})
-  );
-
+    expect(colorReducer()).toEqual({}));
 });

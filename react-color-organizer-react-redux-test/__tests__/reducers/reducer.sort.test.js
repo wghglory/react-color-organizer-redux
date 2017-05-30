@@ -9,13 +9,14 @@ describe("sort Reducer", () => {
     const action = {
       type: C.SORT_COLORS,
       sortBy: "SORTED_BY_RATING"
-    };
-    deepFreeze(state);
-    deepFreeze(action);
-    expect(sortReducer(state, action)).toEqual("SORTED_BY_RATING");
-  });
+    }
+    deepFreeze(state)
+    deepFreeze(action)
+    expect(sortReducer(state, action)).toEqual("SORTED_BY_RATING")
+  })
 
-  it("defaults to SORTED_BY_DATE", () =>
-    expect(sortReducer()).toEqual("SORTED_BY_DATE"));
-
-});
+  it("defaults to SORTED_BY_DATE", () => {
+    expect(sortReducer()).toEqual("SORTED_BY_DATE")
+  })
+  
+})

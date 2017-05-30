@@ -1,9 +1,6 @@
 import C from '../constants/constants.color';
 
-export const colorReducer = (state = {}, action) => {
-  if (action === undefined || action.type === undefined) {
-    return state;
-  }
+export const colorReducer = (state = {}, action = { type: null }) => {
   switch (action.type) {
     case C.ADD_COLOR:
       return {
@@ -26,10 +23,7 @@ export const colorReducer = (state = {}, action) => {
   }
 };
 
-export const colorsReducer = (state = [], action) => {
-  if (action === undefined || action.type === undefined) {
-    return state;
-  }
+export const colorsReducer = (state = [], action = { type: null }) => {
   switch (action.type) {
     case C.ADD_COLOR:
       return [

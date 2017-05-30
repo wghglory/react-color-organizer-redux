@@ -1,6 +1,6 @@
 import C from '../../app/constants/constants.color';
 import { colorsReducer } from '../../app/reducers/reducer.color';
-import deepFreeze from 'deep-freeze';
+import deepFreeze from 'deep-freeze'
 
 describe("colors Reducer", () => {
 
@@ -13,16 +13,16 @@ describe("colors Reducer", () => {
         timestamp: 'Sat Mar 12 2016 16:12:09 GMT-0800 (PST)',
         rating: 3
       }
-    ];
+    ]
     const action = {
       type: C.ADD_COLOR,
       id: 1,
       title: 'Bright Whtie',
       color: '#FFFFFF',
       timestamp: new Date().toString()
-    };
-    deepFreeze(state);
-    deepFreeze(action);
+    }
+    deepFreeze(state)
+    deepFreeze(action)
     expect(colorsReducer(state, action))
       .toEqual([
         {
@@ -39,8 +39,8 @@ describe("colors Reducer", () => {
           timestamp: action.timestamp,
           rating: 0
         }
-      ]);
-  });
+      ])
+  })
 
   it("RATE_COLOR success", () => {
     const state = [
@@ -58,14 +58,14 @@ describe("colors Reducer", () => {
         timestamp: 'Sat Mar 12 2016 16:12:09 GMT-0800 (PST)',
         rating: undefined
       }
-    ];
+    ]
     const action = {
       type: C.RATE_COLOR,
       id: 1,
       rating: 5
-    };
-    deepFreeze(state);
-    deepFreeze(action);
+    }
+    deepFreeze(state)
+    deepFreeze(action)
     expect(colorsReducer(state, action))
       .toEqual([
         {
@@ -82,8 +82,8 @@ describe("colors Reducer", () => {
           timestamp: 'Sat Mar 12 2016 16:12:09 GMT-0800 (PST)',
           rating: 5
         }
-      ]);
-  });
+      ])
+  })
 
   it("REMOVE_COLOR success", () => {
     const state = [
@@ -101,13 +101,13 @@ describe("colors Reducer", () => {
         timestamp: 'Sat Mar 12 2016 16:12:09 GMT-0800 (PST)',
         rating: 5
       }
-    ];
+    ]
     const action = {
       type: C.REMOVE_COLOR,
       id: 0
-    };
-    deepFreeze(state);
-    deepFreeze(action);
+    }
+    deepFreeze(state)
+    deepFreeze(action)
     expect(colorsReducer(state, action))
       .toEqual([
         {
@@ -117,10 +117,10 @@ describe("colors Reducer", () => {
           timestamp: 'Sat Mar 12 2016 16:12:09 GMT-0800 (PST)',
           rating: 5
         }
-      ]);
-  });
+      ])
+  })
 
   it("Defaults array for incorrect action", () =>
-    expect(colorsReducer()).toEqual([]));
+    expect(colorsReducer()).toEqual([]))
 
-});
+})
