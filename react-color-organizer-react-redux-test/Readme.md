@@ -966,47 +966,6 @@ To run Jest with code coverage, simply add the coverage flag when you run the je
 jest --coverage
 ```
 
-A report on current code coverage will be generated and displayed in the terminal:
-
-  PASS  __tests__/components/ui/ColorList.test.js
-  ...
-  PASS  __tests__/actions.test.js
-  PASS  __tests__/store/reducers/color.test.js
-
---------------------|--------|----------|----------|----------|----------------|
-File                |% Stmts | % Branch |  % Funcs |  % Lines |Uncov'd Lines   |
---------------------|--------|----------|----------|----------|----------------|
-All files           |  68.42 |    43.33 |    45.59 |    72.39 |                |
- src                |    100 |      100 |      100 |      100 |                |
-  actions.js        |    100 |      100 |      100 |      100 |                |
-  constants.js      |    100 |      100 |      100 |      100 |                |
- src/components     |  58.33 |      100 |       40 |    58.33 |                |
-  containers.js     |  58.33 |      100 |       40 |    58.33 | 11,13,20,24,26 |
- src/components/HOC |    100 |      100 |      100 |      100 |                |
-  Expandable.js     |    100 |      100 |      100 |      100 |                |
- src/components/ui  |  45.65 |    35.29 |       24 |       50 |                |
-  AddColorForm.js   |  16.67 |        0 |        0 |    18.18 |... 13,16,18,21 |
-  Color.js          |  66.67 |      100 |    33.33 |    66.67 |          40,41 |
-  ColorList.js      |   62.5 |       40 |       50 |    83.33 |             13 |
-  SortMenu.js       |   37.5 |        0 |        0 |    42.86 |    11,14,18,19 |
-  Star.js           |    100 |      100 |      100 |      100 |                |
-  StarRating.js     |  33.33 |        0 |        0 |       40 |          5,7,9 |
-  TimeAgo.js        |     50 |      100 |        0 |       50 |              4 |
- src/lib            |  58.54 |       15 |    16.67 |    67.65 |                |
-  array-helpers.js  |     60 |    33.33 |       60 |    71.43 |            6,8 |
-  time-helpers.js   |  58.06 |        0 |        0 |    66.67 |... 43,45,49,54 |
- src/store          |  97.14 |       70 |      100 |    96.77 |                |
-  index.js          |    100 |      100 |      100 |      100 |                |
-  reducers.js       |  94.12 |    64.71 |      100 |    94.12 |             21 |
---------------------|--------|----------|----------|----------|----------------|
-
-Test Suites: 7 passed, 7 total
-Tests:       29 passed, 29 total
-Snapshots:   1 passed, 1 total
-Time:        1.691s, estimated 2s
-
-Ran all test suites.
-
 Jest also generates a report that you can run in your browser, which provides more details about what code has been covered by tests. After running Jest with coverage reporting, you will notice that a coverage folder has been added to the root. In a web browser, open this file: `/coverage/lcov-report/index.html`. 
 
 This report tells you how much of the code has been covered, as well as the individual coverage based upon each subfolder. You can drill down into a subfolder to see how well the individual files within have been covered. 
