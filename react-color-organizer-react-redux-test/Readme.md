@@ -982,7 +982,7 @@ You can also include coverage options in your package.json file:
     "verbose": true,
     "collectCoverage": true,
     "notify": true,
-    "collectCoverageFrom": ["src/**"],
+    "collectCoverageFrom": ["app/**"],
     "coverageThreshold": {
       "global": {
         "branches": 80,
