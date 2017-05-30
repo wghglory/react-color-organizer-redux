@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">25% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>12/12</span>
+        <span class='fraction'>3/12</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -30,18 +30,18 @@
         <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>5/5</span>
+        <span class='fraction'>0/5</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">25% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>12/12</span>
+        <span class='fraction'>3/12</span>
       </div>
     </div>
   </div>
-  <div class='status-line high'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -176,38 +176,38 @@
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -259,39 +259,39 @@ Colors.contextTypes = {
 &nbsp;
 export const NewColor = connect(
   null,
-  dispatch =&gt;
-    ({
+<span class="fstat-no" title="function not covered" >  di</span>spatch =&gt;
+    (<span class="cstat-no" title="statement not covered" >{</span>
       onNewColor(title, color) {
-        dispatch(addColor(title, color));
+<span class="cstat-no" title="statement not covered" >        dispatch(addColor(title, color));</span>
       }
     })
 )(AddColorForm);
 &nbsp;
 export const Menu = connect(
-  state =&gt;
-    ({
+<span class="fstat-no" title="function not covered" >  st</span>ate =&gt;
+    (<span class="cstat-no" title="statement not covered" >{</span>
       sort: state.sort
     }),
-  dispatch =&gt;
-    ({
+<span class="fstat-no" title="function not covered" >  di</span>spatch =&gt;
+    (<span class="cstat-no" title="statement not covered" >{</span>
       onSelect(sortBy) {
-        dispatch(sortColors(sortBy));
+<span class="cstat-no" title="statement not covered" >        dispatch(sortColors(sortBy));</span>
       }
     })
 )(SortMenu);
 &nbsp;
 export const Colors = connect(
-  state =&gt;
-    ({
+<span class="fstat-no" title="function not covered" >  st</span>ate =&gt;
+    (<span class="cstat-no" title="statement not covered" >{</span>
       colors: [...state.colors].sort(sortFunction(state.sort))
     }),
-  dispatch =&gt;
-    ({
+<span class="fstat-no" title="function not covered" >  di</span>spatch =&gt;
+    (<span class="cstat-no" title="statement not covered" >{</span>
       onRemove(id) {
-        dispatch(removeColor(id));
+<span class="cstat-no" title="statement not covered" >        dispatch(removeColor(id));</span>
       },
       onRate(id, rating) {
-        dispatch(rateColor(id, rating));
+<span class="cstat-no" title="statement not covered" >        dispatch(rateColor(id, rating));</span>
       }
     })
 )(ColorList);
@@ -301,7 +301,7 @@ export const Colors = connect(
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon May 29 2017 20:49:46 GMT-0700 (PDT)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon May 29 2017 21:33:56 GMT-0700 (PDT)
 </div>
 </div>
 <script src="../../prettify.js"></script>

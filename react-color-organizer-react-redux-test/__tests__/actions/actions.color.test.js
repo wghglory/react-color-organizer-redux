@@ -1,4 +1,3 @@
-import C from '../../app/constants/constants.color';
 import storeFactory from '../../app/store/storeFactory';
 import { sortColors, addColor, rateColor, removeColor } from '../../app/actions/actions.color';
 

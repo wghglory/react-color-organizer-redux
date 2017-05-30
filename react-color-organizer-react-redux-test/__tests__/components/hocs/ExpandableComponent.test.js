@@ -14,7 +14,6 @@ describe("Expandable Higher Order Component", () => {
         </div>
       );
 
-
   describe("Rendering UI", () => {
 
     beforeAll(() => {
