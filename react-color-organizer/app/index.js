@@ -8,12 +8,15 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 import storeFactory from './store/storeFactory';
 import { Provider } from 'react-redux';
+import { HashRouter } from 'react-router-dom';
 
 const store = storeFactory();
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <HashRouter>
+      <App />
+    </HashRouter>
   </Provider>,
   document.getElementById('app')
 );

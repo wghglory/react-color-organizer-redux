@@ -34,8 +34,8 @@ The Color Organizer allows users to add, name, rate, and remove colors from thei
 * level 3: We decoupled the store’s functionality from our presentation through the use of container components. 
 * level 4: we used react-redux to help us rapidly connect the store to presentation using context and container components.
 
-* react-color-organizer-test: level 4, test
-* react-color-organizer: level 4, test, react router
+* react-color-organizer-test: level 4 + test
+* react-color-organizer: level 4 + react router (sort based on url)
 ---
 
 #### Installation

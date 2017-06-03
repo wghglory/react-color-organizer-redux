@@ -1,11 +1,10 @@
 // can create a container folder and separate them
 import AddColorForm from './ui/AddColorForm';
-import SortMenu from './ui/SortMenu';
 import ColorList from './ui/ColorList';
-import { addColor, sortColors, rateColor, removeColor } from '../actions/actions.color';
-import { sortFunction } from '../utils/arrayHelper';
-
+import { addColor, rateColor, removeColor } from '../actions/actions.color';
 import { connect } from 'react-redux';
+import ColorDetail from '../components/ui/ColorDetail';
+import { findById, sortColors } from '../utils/arrayHelper';
 
 /*export const NewColor = (props, { store }) =>
   <AddColorForm onNewColor={(title, color) =>
@@ -54,23 +53,24 @@ export const NewColor = connect(
     })
 )(AddColorForm);
 
-export const Menu = connect(
-  state =>
-    ({
-      sort: state.sort
-    }),
-  dispatch =>
-    ({
-      onSelect(sortBy) {
-        dispatch(sortColors(sortBy));
-      }
-    })
-)(SortMenu);
+// export const Menu = connect(
+//   state =>
+//     ({
+//       sort: state.sort
+//     }),
+//   dispatch =>
+//     ({
+//       onSelect(sortBy) {
+//         dispatch(sortColors(sortBy));
+//       }
+//     })
+// )(SortMenu);
 
 export const Colors = connect(
-  state =>
+  ({ colors }, { match }) =>
     ({
-      colors: [...state.colors].sort(sortFunction(state.sort))
+      // colors: [...state.colors].sort(sortFunction(state.sort))
+      colors: sortColors(colors, match.params.sort)
     }),
   dispatch =>
     ({
@@ -82,3 +82,8 @@ export const Colors = connect(
       }
     })
 )(ColorList);
+
+export const Color = connect(
+  ({ colors }, { match }) => findById(colors, match.params.id)
+)(ColorDetail);
+

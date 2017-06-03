@@ -23,29 +23,3 @@ export const rateColor = (id, rating) =>
     id,
     rating
   });
-
-export const sortColors = (sortBy = "SORTED_BY_DATE") =>
-  ({
-    type: C.SORT_COLORS,
-    sortBy
-  });
-
-// export const sortColors = sortedBy => {
-//   if (sortedBy === "rating") {
-//     return {
-//       type: C.SORT_COLORS,
-//       sortBy: "SORTED_BY_RATING"
-//     };
-//   }
-//   else if (sortedBy === "title") {
-//     return {
-//       type: C.SORT_COLORS,
-//       sortBy: "SORTED_BY_TITLE"
-//     };
-//   }
-//   else return {
-//     type: C.SORT_COLORS,
-//     sortBy: "SORTED_BY_DATE"
-//   };
-// };
-
