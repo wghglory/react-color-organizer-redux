@@ -36,6 +36,7 @@ The Color Organizer allows users to add, name, rate, and remove colors from thei
 
 * react-color-organizer-react-redux-test: level 4 + test
 * react-color-organizer-react-router: level 4 + react router (sort based on url)
+* react-color-organizer-universal: react-color-organizer-react-router + universal 
 ---
 
 #### Installation
